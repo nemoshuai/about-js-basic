@@ -97,3 +97,23 @@ console.log('script end') // -- (9)
  * 输出(6), (7)(8)都是Promise.then 进入微任务队列，输出(9), 这一轮宏任务执行完，开始执行该宏任务的微任务，按照队列先进先出
  * 先输出(4)(7)(8),然后把控制权交还async1, 输出(2), 微任务到此结束，执行下一轮宏任务，输出(3)
  */
+
+ async function test() {
+    console.log(1);
+    setTimeout(() => {
+      console.log(2);
+    })
+    await new Promise((resolve) => {
+      console.log(3);
+      setTimeout(resolve)
+    }) 
+    console.log(4);
+  }
+  
+  test()
+
+  /**
+   * 输出了3后 宏任务队列里面是 第一个setTimeout，第一个setTimeout 然后此时微任务为空
+   * 就去执行宏任务，拿第一个setTimeout出来 输出2，然后没有微任务，继续执行宏任务setTimeout(resolve), 
+   * 这个时候promise才resolve，因为有await，所以要等resolve后才能够执行到console.log(4)
+   */

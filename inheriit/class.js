@@ -1,9 +1,11 @@
 class Worker {
+  #privateA;
   // 构造函数
   constructor(name, id) {
     this.name = name;
     this.id = id;
     this.sayThis = this.sayThis.bind(this);
+    this.#privateA = '私有变量';
   }
 
   static data = '静态属性';

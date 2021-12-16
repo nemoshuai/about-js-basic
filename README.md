@@ -1,7 +1,7 @@
 <!--
  * @Author: nemo
  * @Date: 2021-11-22 14:57:23
- * @LastEditTime: 2021-11-22 15:49:26
+ * @LastEditTime: 2021-12-05 14:19:43
  * @LastEditors: Please set LastEditors
  * @Description: 
  * @FilePath: /about-js-basic/README.md
@@ -42,3 +42,6 @@ JS基础
 [排序算法](sort.js)<br>
 [检测浏览器是否支持webp](webpCheck.js)<br>
 [JS原生数组方法实现](arrayFunc.js)<br>
+
+[lodash.keyBy方法实现](keyBy.js)<br>
+[lodash.maxBy方法实现](maxBy.js)<br>
