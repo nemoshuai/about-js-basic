@@ -1,7 +1,7 @@
 <!--
  * @Author: nemo
  * @Date: 2021-11-22 14:57:23
- * @LastEditTime: 2021-12-05 14:19:43
+ * @LastEditTime: 2022-01-12 15:47:44
  * @LastEditors: Please set LastEditors
  * @Description: 
  * @FilePath: /about-js-basic/README.md
@@ -45,3 +45,6 @@ JS基础
 
 [lodash.keyBy方法实现](keyBy.js)<br>
 [lodash.maxBy方法实现](maxBy.js)<br>
+[async/await generator实现原理](asyncAwait.js)<br>
+
+[一部分笔试编程（不一定对）](interview-code)<br>
